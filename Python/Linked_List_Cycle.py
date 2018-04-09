@@ -16,9 +16,22 @@ class Solution:
                 return True
         return False
 
+##
+# with cycle 
+##
 if __name__ == "__main__":
     head = ListNode(5)
     head.next = ListNode(4)
     head.next.next = ListNode(3)
     head.next.next.next = head.next
+    print Solution().hasCycle(head)
+    
+##
+# without cycle
+##
+if __name__ == "__main__":
+    head = ListNode(5)
+    head.next = ListNode(4)
+    head.next.next = ListNode(3)
+    head.next.next.next = ListNode(1)
     print Solution().hasCycle(head)
