@@ -1,7 +1,7 @@
 ###
 ##  See code visualized https://goo.gl/j7JgdF
 ###
-python class ListNode:
+class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -60,18 +60,16 @@ if __name__ == '__main__':
 ###
 ## With intersection 
 ###
-'''
 if __name__ == '__main__':
     headA = ListNode(1)
     headA.next = ListNode(2)
     headA.next.next = ListNode(3)
     headA.next.next.next = ListNode(9)
     headA.next.next.next.next = ListNode(10)
-    intersection = headA.next.next.next.next;
+    intersection = headA.next.next.next.next
     headB = ListNode(0)
     headB.next = ListNode(3)
     headB.next.next = ListNode(8)
     headB.next.next.next = ListNode(9)
     headB.next.next.next.next = intersection
     print Solution().getIntersectionNode(headA, headB)
-'''
