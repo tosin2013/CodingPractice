@@ -1,3 +1,6 @@
+###
+##  See code visualized https://goo.gl/j7JgdF
+###
 python class ListNode:
     def __init__(self, x):
         self.val = x
